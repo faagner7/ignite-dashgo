@@ -1,5 +1,10 @@
 import { Box, Stack, Text, Link, Icon } from '@chakra-ui/react'
-import { RiContactsLine, RiDashboardLine } from 'react-icons/ri'
+import {
+  RiContactsLine,
+  RiDashboardLine,
+  RiGitMergeLine,
+  RiInputMethodLine,
+} from 'react-icons/ri'
 
 export function Sidebar() {
   const test = 'teste'
@@ -22,6 +27,25 @@ export function Sidebar() {
               <Icon as={RiContactsLine} fontSize='20' />
               <Text ml='4' fontWeight='medium'>
                 Usuários
+              </Text>
+            </Link>
+          </Stack>
+        </Box>
+        <Box as='section'>
+          <Text fontWeight='bold' color='gray.400' fontSize='small'>
+            AUTOMAÇÃO
+          </Text>
+          <Stack spacing='4' mt='8' align='stretch'>
+            <Link display='flex' align='center'>
+              <Icon as={RiInputMethodLine} fontSize='20' />
+              <Text ml='4' fontWeight='medium'>
+                Formulários
+              </Text>
+            </Link>
+            <Link display='flex' align='center'>
+              <Icon as={RiGitMergeLine} fontSize='20' />
+              <Text ml='4' fontWeight='medium'>
+                Automação
               </Text>
             </Link>
           </Stack>
