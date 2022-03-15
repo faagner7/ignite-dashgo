@@ -7,8 +7,6 @@ import {
 } from 'react-icons/ri'
 
 export function Sidebar() {
-  const test = 'teste'
-  console.log('test', test)
   return (
     <Box as='aside' w='64' mr='8'>
       <Stack spacing='12' align='flex-start'>
